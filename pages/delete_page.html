@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles/main_conteiner_style.css">
+<link rel="stylesheet" href="../styles/delete_styles.css">
+<link rel="stylesheet" href="../styles/header_style.css">
+<script src="../scripts/delete_script.js"></script>
+
+<head>
+    <title>Администратор</title>
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="head_logo">
+            <img class="logo" src="../icon/logo.jpg">
+            <label class="text_logo">
+                Support System Administrator
+            </label>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_conteiner">
+
+            <div class="select_user_text">
+                <label>Выберите пользователя</label>
+            </div>
+
+            <div class="select_user_box">
+                <div class="search_box">
+                    <div class="input_user">
+                        <input class="search_user" type="text" name="search_user" id="search_user">
+                    </div>
+                    <div class="filter_btns_box">
+                        <button onclick="search_user()" class="search_btn">Поиск</button>
+                    
+                        <button onclick="reset()" class="reset_btn">Сброс</button>
+                    </div>
+                </div>
+                <div class="users-container" id="users-container"></div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

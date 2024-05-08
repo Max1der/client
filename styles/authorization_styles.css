@@ -1,0 +1,209 @@
+.login_box-text{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.login_box-input{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 60px;
+	margin-top: 10px;
+}
+
+.pass_box-text{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 20px;
+}
+
+.pass_box-input{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 60px;
+	margin-top: 10px;
+}
+
+.input_form{
+	height: 35px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 20px;
+	padding-left: 15px;
+	font-size: 20px;
+}
+
+.text{
+	display: flex;
+	justify-content: left;
+	font-weight: medium;
+	margin-top: 10px;
+}
+
+.user_type{
+	display: flex;
+	width: 70%;
+	margin-left: 80px;
+	margin-top: 30px;
+}
+
+.type_user{
+	width: 50%;
+	display: flex;
+	justify-content: left;
+}
+
+.type_admin{
+	width: 50%;
+	display: flex;
+	justify-content: right;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.switch_user{
+	display: flex;
+	justify-content: center;
+	width: 99%;
+	height: 60px;
+	margin-top: 10px;
+}
+
+.switch_user_slider {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 70%;
+	height: 40px;
+	background: grey;
+	display: block;
+	border-radius: 20px;
+	position: relative;
+}
+
+.switch_user_slider:after {
+	  content: '';
+	  text-indent: 0px;
+	  position: absolute;
+	  top: 5px;
+	  margin-bottom: 5px;
+	  left: 5px;
+	  width: 30px;
+	  height: 30px;
+	  background: #fff;
+	  border-radius: 90px;
+	  transition: 0.7s;
+}
+
+input:checked + .switch_user_slider {
+  	background: grey;
+}
+
+input:checked + .switch_user_slider:after {
+  	left: calc(100% - 5px);
+  	transform: translateX(-100%);
+}
+
+.enter_button_box{
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	margin-top: 10px;
+}
+
+.enter_button {
+	height: 40px;
+	width: 50%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow:
+		inset rgba(0,0,0,.6) 0 -3px 8px,
+		rgba(0,0,0,.6) 0  0 3px -3px,
+		inset rgba(252,255,255,.7) 0 3px 8px,
+		rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.registry_button_box{
+	display: flex;
+	justify-content: center;
+	height: 60px;
+}
+
+.registry_button{
+	height: 40px;
+	width: 50%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow:
+		inset rgba(0,0,0,.6) 0 -3px 8px,
+		rgba(0,0,0,.6) 0  0 3px -3px,
+		inset rgba(252,255,255,.7) 0 3px 8px,
+		rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.about_app{
+	height: 27%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.about_app_text{
+	padding: 10px;
+	margin-top: 60px;
+}
+
+@media(max-width: 450px){
+	.login_box-text{
+		font-size: 20px;
+		margin-left: 25px;
+		margin-top: 70px;
+	}
+	.pass_box-text{
+		font-size: 20px;
+		margin-left: 25px;
+	}
+	.login_box-input{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.pass_box-input{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.user_type{
+		margin-left: 30px;
+		width: 85%;
+	}
+	.switch_user{
+		width: 100%;
+	}
+	.switch_user_slider{
+		width: 90%;
+	}
+	.enter_button{
+		width: 70%;
+	}
+	.registry_button{
+		width: 70%;
+	}
+	.about_app_text{
+		margin-top: 120px;
+	}
+ }

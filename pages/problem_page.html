@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles/main_conteiner_style.css">
+<link rel="stylesheet" href="../styles/problem_styles.css">
+<link rel="stylesheet" href="../styles/header_style.css">
+<script src="../scripts/problem_script.js"></script>
+
+<head>
+        <title>Администратор</title>
+</head>
+<body >
+    <header  class="main_header">
+        <div  class="head_logo">
+            <img class="logo" src="../icon/logo.jpg">
+            <label class ="text_logo">
+                Support System Administrator
+            </label>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_conteiner" id="main_container">
+            <button onclick="window.location.replace('admin_page.html')">
+                Меню
+            </button>
+
+            <div class="select_user_box">
+                                <div class="users-container" id="users-container"></div>
+            </div>
+        </div>
+        <div class="user-info" id="user-info">
+            <div class="user-field">
+                <div class="user-title">Статус:</div>
+                <div class="user-text" id="problem-status"></div>
+            </div>
+            <div class="user-field">
+                <div class="user-title">Уровень:</div>
+                <div class="user-text" id="problem-level"></div>
+            </div>
+            <div class="user-field">
+                <div class="user-title">ФИО:</div>
+                <div class="user-text" id="user-fio"></div>
+            </div>
+            <div class="user-field">
+                <div class="user-title">Отдел:</div>
+                <div class="user-text" id="user-department"></div>
+            </div>
+            <div class="user-field">
+                <div class="user-title">Компьютер:</div>
+                <div class="user-text" id="user-pc"></div>
+            </div>
+            <div class="user-field">
+                <div class="user-title">Логин:</div>
+                <div class="user-text" id="user-login"></div>
+            </div>
+            <div class="user-field-problem" id="problem-text">
+                У меня не работает монитор
+            </div>
+            <button onclick="acceptProblem()" id="accept-button">Принять</button>
+            <button onclick="completeProblem()" id="complete-button" style="display: none">Завершить</button>
+            <button onclick="closeProblem()">Закрыть</button>
+        </div>
+    </main>
+ </body>
+</html>

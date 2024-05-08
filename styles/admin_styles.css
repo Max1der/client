@@ -1,0 +1,109 @@
+.problem_list_button_box{
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	margin-top: 20%;
+}
+
+.problem_list_button{
+	height: 40px;
+	width: 50%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow:
+		inset rgba(0,0,0,.6) 0 -3px 8px,
+		rgba(0,0,0,.6) 0  0 3px -3px,
+		inset rgba(252,255,255,.7) 0 3px 8px,
+		rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.registry_button_box{
+	display: flex;
+	justify-content: center;
+	height: 60px;
+}
+
+.registry_button{
+	height: 40px;
+	width: 50%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow:
+		inset rgba(0,0,0,.6) 0 -3px 8px,
+		rgba(0,0,0,.6) 0  0 3px -3px,
+		inset rgba(252,255,255,.7) 0 3px 8px,
+		rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.delete_button_box{
+	display: flex;
+	justify-content: center;
+	height: 60px;
+}
+
+.delete_button{
+	height: 40px;
+	width: 50%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow:
+		inset rgba(0,0,0,.6) 0 -3px 8px,
+		rgba(0,0,0,.6) 0  0 3px -3px,
+		inset rgba(252,255,255,.7) 0 3px 8px,
+		rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.exit_button_box{
+	display: flex;
+	justify-content: center;
+	height: 60px;
+}
+
+.exit_button {
+	height: 40px;
+	width: 50%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: cursive;
+	box-shadow:
+		inset rgba(0,0,0,.6) 0 -3px 8px,
+		rgba(0,0,0,.6) 0  0 3px -3px,
+		inset rgba(252,255,255,.7) 0 3px 8px,
+		rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.about_app{
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-family: cursive;
+	color: black;
+}
+
+.about_app_text{
+	padding: 10px;
+	margin-top: 50px;
+}
+
+@media(max-width: 450px){
+	.registry_button{
+		width: 70%;
+	}
+	.problem_list_button{
+		width: 70%;
+	}
+	.delete_button{
+		width: 70%;
+	}
+	.exit_button{
+		width: 70%;
+	}
+	.about_app_text{
+		margin-top: 120px;
+	}
+ }

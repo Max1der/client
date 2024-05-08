@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles/authorization_styles.css">
+<link rel="stylesheet" href="../styles/header_style.css">
+<link rel="stylesheet" href="../styles/main_conteiner_style.css">
+<script src="../scripts/authorization_script.js"></script>
+
+<head>
+        <title>Главная</title>
+</head>
+<body >
+    <header  class="main_header">
+        <div  class="head_logo">
+            <img class="logo" src="../icon/logo.jpg">
+            <label class ="text_logo">
+                Support System Administrator
+            </label>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_conteiner">
+
+            <div class="login_box-text">
+                <label class="text"> Логин: </label>
+            </div>
+
+            <div class="login_box-input">
+                <input class="input_form" type="text" name="login" id="login" placeholder="IvanovII" minlength="5" required>
+            </div>
+            
+            <div class="pass_box-text">
+                <label class="text"> Пароль: </label>
+            </div>
+
+            <div class="pass_box-input">
+                <input class="input_form" type="password" name="password" id="password" placeholder="********" required>
+            </div>
+
+            <div class="user_type">
+                <div class="type_user"> Сотрудник </div>
+                <div class="type_admin"> Администратор</div>
+            </div>
+
+            <div class="switch_user">
+                <input type="checkbox" name="switch_slider"  id="switch_slider"  >
+                <label class="switch_user_slider" for="switch_slider" id="user_slider" onclick="userType()" ></label>
+            </div>
+
+            <div class="enter_button_box">
+                <button class=enter_button onclick="testLoginAndPass(true)" id="enter_button">
+                    <span>Войти</span>
+                </button>
+            </div>
+
+            <div class="registry_button_box">
+                <button class=registry_button onclick="testLoginAndPass(false)" id="registry_button" style="display: none;">
+                    Регистрация
+                </button>
+            </div>
+
+            <div class="about_app">
+                <a class="about_app_text" href="info.html" style="color: black;">О приложении</a> 
+            </div>
+
+        </div>
+    </main>
+ </body>
+</html>

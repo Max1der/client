@@ -1,0 +1,162 @@
+.FIO_box-text{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+.FIO_box-input{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 50px;
+	margin-top: 5px;
+}
+
+.department_box-text{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 17px;
+}
+
+.department_box-input{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 50px;
+	margin-top: 5px;
+}
+
+.pc_box-text{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 17px;
+}
+
+.pc_box-input{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 50px;
+	margin-top: 5px;
+}
+
+.login_box-text{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 17px;
+}
+
+.login_box-input{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 50px;
+	margin-top: 5px;
+}
+
+.pass_box-text{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 17px;
+}
+
+.pass_box-input{
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 50px;
+	margin-top: 5px;
+}
+
+.input_form{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 20px;
+	padding-left: 15px;
+	font-size: 17px;
+}
+
+.select_form{
+	height: 45px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 20px;
+	padding-left: 15px;
+	font-size: 17px;
+}
+
+.user_type{
+	width: 90%;
+	font-family: cursive;
+	margin-left: 50px;
+	height: 100px;
+	margin-top: 10px;
+}
+
+.registry_button_box{
+	display: flex;
+	justify-content: center;
+	height: 60px;
+}
+
+.registry_button{
+	height: 40px;
+	width: 70%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow:
+		inset rgba(0,0,0,.6) 0 -3px 8px,
+		rgba(0,0,0,.6) 0  0 3px -3px,
+		inset rgba(252,255,255,.7) 0 3px 8px,
+		rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.closereg_button_box{
+	display: flex;
+	justify-content: center;
+	height: 60px;
+}
+
+.closereg_button{
+	height: 40px;
+	width: 70%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow:
+		inset rgba(0,0,0,.6) 0 -3px 8px,
+		rgba(0,0,0,.6) 0  0 3px -3px,
+		inset rgba(252,255,255,.7) 0 3px 8px,
+		rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+@media (max-width: 450px){
+	.user_type{
+		height: 100px;
+	}
+	.about_app_text{
+		margin-top: 45px;
+	}
+}

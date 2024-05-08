@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles/main_conteiner_style.css">
+<link rel="stylesheet" href="../styles/admin_styles.css">
+<link rel="stylesheet" href="../styles/header_style.css">
+<script src="../scripts/admin_script.js"></script>
+
+<head>
+        <title>Администратор</title>
+</head>
+<body >
+    <header  class="main_header">
+        <div  class="head_logo">
+            <img class="logo" src="../icon/logo.jpg">
+            <label class ="text_logo">
+                Support System Administrator
+            </label>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_conteiner">
+<!-- надо менять -->
+            <div class="problem_list_button_box">
+                <button class="problem_list_button" onclick="window.location.replace('problem_page.html')" id="send_button"> 
+                    <span>Список жалоб</span>
+                </button>
+            </div>
+
+            <div class="registry_button_box">
+                <button class="registry_button" onclick="window.location.replace('registry_page.html')" id="registry_button">
+                    <span>Регистрация нового пользователя</span>
+                </button>
+            </div>
+
+            <div class="delete_button_box">
+                <button class="delete_button" onclick="window.location.replace('delete_page.html')" id="delete_button">
+                    <span>Удаление пользователя</span>
+                </button>
+            </div>
+
+            <div class="exit_button_box">
+                <button class=exit_button onclick="localStorage.removeItem('token'); window.location.replace('authorization_page.html')" id="exit_button">
+                    <span>Выйти</span>
+                </button>
+            </div>
+
+            <div class="about_app">
+                <a class="about_app_text" href="info.html" style="color: black;">О приложении</a>
+            </div>
+
+        </div>
+    </main>
+ </body>
+</html>
