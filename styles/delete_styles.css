@@ -1,9 +1,9 @@
-.select_user_text{
+.select_user_text {
 	display: flex;
 	justify-content: center;
 }
 
-.select_user_box{
+.select_user_box {
 	display: flex;
 	width: 95%;
 	flex-direction: column;
@@ -12,14 +12,11 @@
 	/* padding: 1rem; */
 }
 
-.search_box{
+.search_box {
 	width: 90%;
 }
-.input_user{
-	
-}
 
-.search_user{
+.search_user {
 	height: 25px;
 	width: 100%;
 	display: flex;
@@ -29,26 +26,44 @@
 	font-size: 20px;
 }
 
-.filter_btns_box{
-width: 100%;
+.filter_btns_box {
+	width: 100%;
 
 }
 
+.menu_btn {
+	height: 40px;
+	width: 80%;
+	color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow:
+		inset rgba(0, 0, 0, .6) 0 -3px 8px,
+		rgba(0, 0, 0, .6) 0 0 3px -3px,
+		inset rgba(252, 255, 255, .7) 0 3px 8px,
+		rgba(0, 0, 0, .8) 0 3px 8px -3px;
+}
 
-.reset_btn{
+.menu_btn_box {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.reset_btn {
 	height: 40px;
 	width: 40%;
 	color: #000;
 	border-radius: 10px;
 	cursor: pointer;
 	box-shadow:
-		inset rgba(0,0,0,.6) 0 -3px 8px,
-		rgba(0,0,0,.6) 0  0 3px -3px,
-		inset rgba(252,255,255,.7) 0 3px 8px,
-		rgba(0,0,0,.8) 0 3px 8px -3px;
+		inset rgba(0, 0, 0, .6) 0 -3px 8px,
+		rgba(0, 0, 0, .6) 0 0 3px -3px,
+		inset rgba(252, 255, 255, .7) 0 3px 8px,
+		rgba(0, 0, 0, .8) 0 3px 8px -3px;
 }
 
-.search_btn{
+.search_btn {
 	height: 40px;
 	margin-left: 70px;
 	margin-top: 5px;
@@ -57,13 +72,13 @@ width: 100%;
 	border-radius: 10px;
 	cursor: pointer;
 	box-shadow:
-		inset rgba(0,0,0,.6) 0 -3px 8px,
-		rgba(0,0,0,.6) 0  0 3px -3px,
-		inset rgba(252,255,255,.7) 0 3px 8px,
-		rgba(0,0,0,.8) 0 3px 8px -3px;
+		inset rgba(0, 0, 0, .6) 0 -3px 8px,
+		rgba(0, 0, 0, .6) 0 0 3px -3px,
+		inset rgba(252, 255, 255, .7) 0 3px 8px,
+		rgba(0, 0, 0, .8) 0 3px 8px -3px;
 }
 
-.users-container{
+.users-container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -71,7 +86,7 @@ width: 100%;
 	overflow: auto;
 }
 
-.users-item{
+.users-item {
 	border: 1px solid black;
 	border-radius: 5px;
 	display: flex;
@@ -81,17 +96,22 @@ width: 100%;
 	padding: 0.5rem;
 	margin-left: 40px;
 	box-shadow:
-		inset rgba(0,0,0,.6) 0 -3px 8px,
-		rgba(0,0,0,.6) 0  0 3px -3px,
-		inset rgba(252,255,255,.7) 0 3px 8px,
-		rgba(0,0,0,.8) 0 3px 8px -3px;
+		inset rgba(0, 0, 0, .6) 0 -3px 8px,
+		rgba(0, 0, 0, .6) 0 0 3px -3px,
+		inset rgba(252, 255, 255, .7) 0 3px 8px,
+		rgba(0, 0, 0, .8) 0 3px 8px -3px;
 }
 
-@media(max-width: 450px){
-	.search_btn{
-	margin-left: 40px;
+@media(max-width: 450px) {
+	.search_btn {
+		margin-left: 40px;
 	}
-	.users-item{
+
+	.users-item {
 		margin-left: 15px;
+	}
+	.menu_btn{
+		width: 70%;
+		margin-left: 25px;
 	}
 }

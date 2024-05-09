@@ -6,25 +6,28 @@
 <script src="../scripts/problem_script.js"></script>
 
 <head>
-        <title>Администратор</title>
+    <title>Администратор</title>
 </head>
-<body >
-    <header  class="main_header">
-        <div  class="head_logo">
+
+<body>
+    <header class="main_header">
+        <div class="head_logo">
             <img class="logo" src="../icon/logo.jpg">
-            <label class ="text_logo">
+            <label class="text_logo">
                 Support System Administrator
             </label>
         </div>
     </header>
     <main class="main">
         <div class="main_conteiner" id="main_container">
-            <button onclick="window.location.replace('admin_page.html')">
-                Меню
-            </button>
+            <div class="menu_btn_box">
+                <button class="menu_btn" onclick="window.location.replace('admin_page.html')">
+                    Меню
+                </button>
+            </div>
 
             <div class="select_user_box">
-                                <div class="users-container" id="users-container"></div>
+                <div class="users-container" id="users-container"></div>
             </div>
         </div>
         <div class="user-info" id="user-info">
@@ -55,10 +58,18 @@
             <div class="user-field-problem" id="problem-text">
                 У меня не работает монитор
             </div>
-            <button onclick="acceptProblem()" id="accept-button">Принять</button>
-            <button onclick="completeProblem()" id="complete-button" style="display: none">Завершить</button>
-            <button onclick="closeProblem()">Закрыть</button>
+            <div class="option_btn_box">
+                
+                    <button onclick="acceptProblem()" id="accept-button" class="option_btn">Принять</button>
+                    <button onclick="completeProblem()" id="complete-button" style="display: none"
+                        class="option_btn">Завершить</button>
+                </div>
+                <div class="option_btn_box">
+                    <button onclick="closeProblem()" class="option_btn">Закрыть</button>
+                </div>
+            </div>
         </div>
     </main>
- </body>
+</body>
+
 </html>
