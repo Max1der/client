@@ -48,6 +48,7 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 15px;
+	margin-left: 25px;
 }
 
 .reset_btn {
