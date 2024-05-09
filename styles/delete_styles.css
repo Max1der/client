@@ -48,7 +48,8 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 15px;
-	margin-left: 25px;
+	margin-left: 8px;
+	width: 100%;
 }
 
 .reset_btn {
@@ -112,6 +113,6 @@
 		margin-left: 15px;
 	}
 	.menu_btn{
-		width: 70%;
+		width: 80%;
 	}
 }
