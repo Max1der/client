@@ -91,7 +91,6 @@ const open_problem = (problemId) => {
         completeButton.style.display = 'block'
     }
 }
-https://ssa-fo1l.onrender.com
 const closeProblem = () => {
     let userInfo = document.getElementById('user-info');
     userInfo.style.display = 'none';
