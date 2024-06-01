@@ -4,10 +4,7 @@
 <link rel="stylesheet" href="../styles/registry_styles.css">
 <link rel="stylesheet" href="../styles/header_style.css">
 <script src="../scripts/registry_script.js"></script>
-
-<head>
-        <title>Регистрация</title>
-</head>
+<head><title>Регистрация</title></head>
 <body >
     <header  class="main_header">
         <div  class="head_logo">
@@ -19,19 +16,15 @@
     </header>
     <main class="main">
         <div class="main_conteiner">
-
              <div class="FIO_box-text">
                 <label class="text"> ФИО: </label>
             </div>
-
             <div class="FIO_box-input">
                 <input class="input_form" type="text" name="fio" id="fio" placeholder="Иванов Иван Иванович" minlength="5" required>
             </div>
-            
             <div class="department_box-text">
                 <label class="text"> Отдел: </label>
             </div>
-
             <div class="department_box-input">
                 <select class="select_form" name="department" id="department">
                     <option value=""></option>
@@ -44,39 +37,30 @@
                     <option value="Отдел системного администрирования">Отдел системного администрирования</option>
                 </select>
             </div>
-
             <div class="pc_box-text">
                 <label class="text"> Номер ПК: </label>
             </div>
-
             <div class="pc_box-input">
                 <input class="input_form" name="pc" id="pc">
             </div>
-
             <div class="login_box-text">
                 <label class="text"> Логин: </label>
             </div>
-
             <div class="login_box-input">
                 <input class="input_form" type="text" name="login" id="login" placeholder="IvanovII" minlength="5" required>
             </div>
-            
             <div class="pass_box-text">
                 <label class="text"> Пароль: </label>
             </div>
-
             <div class="pass_box-input">
                 <input class="input_form" type="password" name="fst_password" id="fst_password" placeholder="********" required>
             </div>
-
             <div class="pass_box-text">
                 <label class="text"> Повторите пароль: </label>
             </div>
-
             <div class="pass_box-input">
                 <input class="input_form" type="password" name="scd_password" id="scd_password" placeholder="********" required>
             </div>
-
             <div class="user_type">
                 <label>Выберите тип пользователя:</label><br>
                 <input type="checkbox" name="type_user" id="type_usr" onclick="check_user_type()">
@@ -85,19 +69,16 @@
                 <input type="checkbox" name="type_admin" id="type_adm" onclick="check_user_type()">
                 <label>Администратор</label>
             </div>
-
             <div class="registry_button_box">
                 <button class=registry_button onclick="registrationUser()" id="registry_button">
                     <span>Зарегестрировать пользователя</span>
                 </button>
             </div>
-
             <div class="closereg_button_box">
                 <button class=closereg_button onclick="window.location.replace('admin_page.html')" id="closereg_button">
                     <span>Отменить регистрацию</span>
                 </button>
             </div>
-
         </div>
     </main>
  </body>

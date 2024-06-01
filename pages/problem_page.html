@@ -4,11 +4,7 @@
 <link rel="stylesheet" href="../styles/problem_styles.css">
 <link rel="stylesheet" href="../styles/header_style.css">
 <script src="../scripts/problem_script.js"></script>
-
-<head>
-    <title>Администратор</title>
-</head>
-
+<head><title>Администратор</title></head>
 <body>
     <header class="main_header">
         <div class="head_logo">
@@ -20,12 +16,31 @@
     </header>
     <main class="main">
         <div class="main_conteiner" id="main_container">
+            <div class="filter-container">
+            <div style="width: 45%;">
+                <label>Статус</label>
+                <select class="select_form" name="department" id="status-filter" onchange="filter()">
+                    <option value="">Все</option>
+                    <option value="Ожидает">Ожидает</option>
+                    <option value="В работе">В работе</option>
+                    <option value="Завершено">Завершено</option>
+                </select>
+            </div>
+            <div style="width: 45%;">
+                <label>Уровень</label>
+                <select class="select_form" name="department" id="level-filter" onchange="filter()">
+                    <option value="">Все</option>
+                    <option value="Низкий уровень">Низкий уровень</option>
+                    <option value="Средний уровень">Средний уровень</option>
+                    <option value="Высокий уровень">Высокий уровень</option>
+                </select>
+            </div>
+        </div>
             <div class="menu_btn_box">
                 <button class="menu_btn" onclick="window.location.replace('admin_page.html')">
                     Меню
                 </button>
             </div>
-
             <div class="select_user_box">
                 <div class="users-container" id="users-container"></div>
             </div>
@@ -55,11 +70,18 @@
                 <div class="user-title">Логин:</div>
                 <div class="user-text" id="user-login"></div>
             </div>
+            <div class="user-field">
+                <div class="user-title">Принял в работу:</div>
+                <div class="user-text" id="user-resolver"></div>
+            </div>
+            <div class="user-field">
+                <div class="user-title">Время:</div>
+                <div class="user-text" id="user-createdAt"></div>
+            </div>
             <div class="user-field-problem" id="problem-text">
                 У меня не работает монитор
             </div>
             <div class="option_btn_box">
-                
                     <button onclick="acceptProblem()" id="accept-button" class="option_btn">Принять</button>
                     <button onclick="completeProblem()" id="complete-button" style="display: none"
                         class="option_btn">Завершить</button>
@@ -71,5 +93,4 @@
         </div>
     </main>
 </body>
-
 </html>

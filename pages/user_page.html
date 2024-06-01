@@ -4,10 +4,7 @@
 <link rel="stylesheet" href="../styles/user_styles.css">
 <link rel="stylesheet" href="../styles/header_style.css">
 <script src="../scripts/user_script.js"></script>
-
-<head>
-        <title>Пользовательская страница</title>
-</head>
+<head><title>Пользовательская страница</title></head>
 <body >
     <header  class="main_header">
         <div  class="head_logo">
@@ -19,12 +16,10 @@
     </header>
     <main class="main">
         <div class="main_conteiner">
-
             <div class="message_text">Опишите вашу проблему:</div>
             <div class="message_box">
                 <input type="text" name="inputfield" id="input_field" class="input_field" placeholder="Введите сообщение...">
             </div>
-
              <div class="problem_level_box">
                 <label>Выберите уровень проблемы:</label><br>
                 <input type="checkbox" name="low_level" class="low_problem" id="low_level" onclick="check_problem_level()">
@@ -34,23 +29,19 @@
                 <input type="checkbox" name="high_level" class="high_problem" id="high_level" onclick="check_problem_level()">
                 <label class="high_problem_text">Высокий</label>
             </div>
-
             <div class="send_button_box">
                 <button class=send_button onclick="send_message()" id="send_button">
                     <span>Отправить</span>
                 </button>
             </div>
-
             <div class="exit_button_box">
                 <button class=exit_button onclick="localStorage.removeItem('token'); window.location.replace('authorization_page.html')" id="exit_button">
                     <span>Выйти</span>
                 </button>
             </div>
-
             <div class="about_app">
                 <a class="about_app_text" href="info.html" style="color: black;">О приложении</a>
             </div>
-
         </div>
     </main>
  </body>

@@ -45,6 +45,10 @@ const displayProblems = (problems) => {
                         Статус:
                         ${problem.status}
                     </div>
+                    <div>
+                        
+                        ${problem.level}
+                    </div>
                 </div>
             <button onclick="open_problem('${problem._id}')">
                 Просмотр
@@ -75,6 +79,11 @@ const open_problem = (problemId) => {
     userLogin.innerHTML = problem.user.login;
     let problemText = document.getElementById('problem-text');
     problemText.innerHTML = problem.text;
+    let resolver = document.getElementById('user-resolver');
+    resolver.innerHTML = problem?.resolver?.fio ?? '';
+    let date = document.getElementById('user-createdAt');
+    let time = new Date(problem.createdAt).toLocaleTimeString()
+    date.innerHTML = new Date(problem.createdAt).toLocaleDateString() + '   ' + time.substring(0,time.length-3);
     if(problem.status == 'В работе'){
         let acceptButton = document.getElementById('accept-button');
         acceptButton.style.display = 'none'
@@ -82,7 +91,7 @@ const open_problem = (problemId) => {
         completeButton.style.display = 'block'
     }
 }
-
+https://ssa-fo1l.onrender.com
 const closeProblem = () => {
     let userInfo = document.getElementById('user-info');
     userInfo.style.display = 'none';
@@ -111,6 +120,8 @@ const acceptProblem = async() => {
             acceptButton.style.display = 'none'
             let completeButton = document.getElementById('complete-button')
             completeButton.style.display = 'block'
+            let resolver = document.getElementById('user-resolver');
+            resolver.innerHTML = res.resolver
         }
     } catch (error) {
         alert(error);
@@ -159,5 +170,24 @@ const get_problems = async() => {
         alert(error);
     }
 }
+
+const filter = () => {
+    let filtered = JSON.parse(JSON.stringify(problems))
+    let filterStatus = document.getElementById('status-filter').value
+    let filterLevel = document.getElementById('level-filter').value
+    if (filterStatus.length > 0 && filterLevel.length > 0){
+        filtered = filtered.filter((problem)=>problem.status.includes(filterStatus)&&problem.level.includes(filterLevel))
+    }
+    else if(filterStatus.length == 0) {
+        filtered = filtered.filter((problem)=>problem.level.includes(filterLevel))
+    }
+    else if(filterLevel.length == 0) {
+        filtered = filtered.filter((problem)=>problem.status.includes(filterStatus))
+    }
+    displayProblems(filtered)
+}
+
+
+
 
 get_problems()
